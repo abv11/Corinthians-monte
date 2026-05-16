@@ -1,4 +1,4 @@
-# ⚫ Corinthians Monte — Site Informativo Oficial
+# ⚫ Corinthians Monte — Site Informativo
 
 <p align="center">
   <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white">
@@ -8,7 +8,7 @@
 </p>
 
 <p align="center">
-  <img width="100%" src="https://images.unsplash.com/photo-1547347298-4074fc3086f0?q=80&w=1600&auto=format&fit=crop">
+  <img width="100%" src="cmbanner.png">
 </p>
 
 ---
