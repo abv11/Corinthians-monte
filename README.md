@@ -1,3 +1,4 @@
+````md
 # ⚫ Corinthians Monte — Site Informativo Oficial
 
 <p align="center">
@@ -17,14 +18,16 @@
 
 O **Corinthians Monte** é um sistema web estático desenvolvido como atividade da disciplina **Linguagem Técnica de Programação 2 (LTP2)** do curso **Técnico Integrado em Informática para Internet** do Instituto Federal de Pernambuco.
 
-O projeto consiste em um **site informativo institucional** desenvolvido exclusivamente em **HTML**, utilizando arquitetura **MPA (Multi-Page Application)**, com foco em:
+O projeto consiste em um **site informativo institucional** desenvolvido exclusivamente em **HTML puro**, utilizando arquitetura **MPA (Multi-Page Application)**.
+
+O desenvolvimento teve como foco:
 
 * organização estrutural;
 * navegação intuitiva;
 * separação modular de páginas;
 * acessibilidade;
-* clareza visual;
-* boas práticas de desenvolvimento web.
+* clareza na disposição das informações;
+* boas práticas de estruturação HTML.
 
 ---
 
@@ -32,37 +35,46 @@ O projeto consiste em um **site informativo institucional** desenvolvido exclusi
 
 O sistema foi projetado para permitir que usuários:
 
-✔️ Naveguem entre páginas independentes
-✔️ Conheçam a história do clube
-✔️ Visualizem títulos conquistados
-✔️ Consultem informações do elenco
-✔️ Utilizem uma interface simples e funcional
+✔️ Naveguem entre páginas independentes  
+✔️ Conheçam a história do clube  
+✔️ Visualizem títulos conquistados  
+✔️ Consultem informações do elenco  
+✔️ Utilizem uma interface simples e funcional  
 
 ---
 
-## 🌐 Link do Projeto
+# 🌐 Link do Projeto
 
 O site já está publicado e pode ser acessado online aqui:
-👉 **[Clique aqui para acessar o site](ui)**
 
-## 🗺️ Arquitetura de Navegação
+👉 **[Clique aqui para acessar o site](https://abv11.github.io/Corinthians-monte/)**
 
-O site foi estruturado com uma navegação bidirecional entre a página principal (`index.html`) e as seções secundárias:
+---
 
-*   **`index.html`** ➡️ `historia.html` / `titulos.html` / `elenco.html`
-*   **Páginas Secundárias** ↩️ `index.html`
+# 🗺️ Arquitetura de Navegação
 
-## 📁 Estrutura de Arquivos
+O site foi estruturado com navegação bidirecional entre a página principal (`index.html`) e as páginas secundárias.
 
-Abaixo está a árvore de diretórios do projeto:
+### Fluxo de Navegação
 
-├── brasao.png         # Logotipo/escudo do time
-├── elenco.html        # Página com a lista de jogadores/membros
-├── historia.html      # Página sobre a história da equipe
-├── index.html         # Página inicial e central do site
-├── README.md          # Documentação do projeto (este arquivo)
-└── titulos.html       # Página com as conquistas e galeria de troféus
+* `index.html` ➜ `historia.html`
+* `index.html` ➜ `titulos.html`
+* `index.html` ➜ `elenco.html`
 
+As páginas secundárias também possuem retorno para a página inicial.
+
+---
+
+# 📁 Estrutura de Arquivos
+
+```txt
+├── brasao.png
+├── elenco.html
+├── historia.html
+├── index.html
+├── README.md
+└── titulos.html
+```
 
 ---
 
@@ -85,12 +97,11 @@ D --> A
 
 # 📚 Tecnologias Utilizadas
 
-| Tecnologia    | Finalidade                |
-| ------------- | ------------------------- |
-| HTML5         | Estruturação do sistema   |
-| CSS3          | Estilização visual        |
-| Hyperlinks    | Navegação entre páginas   |
-| Navegador Web | Execução local do sistema |
+| Tecnologia | Finalidade |
+|---|---|
+| HTML5 | Estruturação completa do sistema |
+| Hyperlinks | Navegação entre páginas |
+| Navegador Web | Execução local do projeto |
 
 ---
 
@@ -98,22 +109,22 @@ D --> A
 
 ## Requisitos Funcionais
 
-* Sistema com múltiplas páginas HTML
-* Navegação interligada entre todas as páginas
-* Página inicial institucional
-* Página de história do clube
-* Página de títulos e conquistas
-* Página dedicada ao elenco
+* Sistema composto por múltiplas páginas HTML;
+* Navegação interligada entre todas as páginas;
+* Página inicial institucional;
+* Página dedicada à história do clube;
+* Página de títulos e conquistas;
+* Página destinada ao elenco.
 
 ---
 
 # 🔒 Requisitos Não Funcionais
 
-* Desenvolvimento exclusivamente em HTML
-* Compatibilidade com navegadores modernos
-* Execução local sem necessidade de servidor
-* Organização modular dos arquivos
-* Navegação clara e objetiva
+* Desenvolvimento exclusivamente em HTML;
+* Compatibilidade com navegadores modernos;
+* Execução local sem necessidade de servidor;
+* Organização modular dos arquivos;
+* Navegação clara e objetiva.
 
 ---
 
@@ -121,14 +132,14 @@ D --> A
 
 ## 📌 Informações Acadêmicas
 
-| Campo       | Informação                                     |
-| ----------- | ---------------------------------------------- |
-| Instituição | Instituto Federal de Pernambuco                |
-| Curso       | Técnico Integrado em Informática para Internet |
-| Disciplina  | Linguagem Técnica de Programação 2             |
-| Docente     | Carlos Fernandes                               |
-| Local       | Palmares — PE                                  |
-| Data        | 5 de maio de 2026                              |
+| Campo | Informação |
+|---|---|
+| Instituição | Instituto Federal de Pernambuco |
+| Curso | Técnico Integrado em Informática para Internet |
+| Disciplina | Linguagem Técnica de Programação 2 |
+| Docente | Carlos Fernandes |
+| Local | Palmares — PE |
+| Data | 5 de maio de 2026 |
 
 ---
 
@@ -165,7 +176,7 @@ Seu principal objetivo é documentar formalmente:
 * estrutura;
 * requisitos;
 * restrições;
-* e possibilidades futuras de expansão do sistema.
+* possibilidades futuras de expansão do sistema.
 
 ---
 
@@ -173,11 +184,12 @@ Seu principal objetivo é documentar formalmente:
 
 O projeto consiste em um sistema web estático voltado para apresentação institucional do clube fictício **Corinthians Monte**.
 
-A aplicação foi desenvolvida visando:
+Toda a aplicação foi desenvolvida exclusivamente com HTML, visando:
 
 * prática de arquitetura MPA;
-* organização de páginas HTML;
-* uso correto de hyperlinks;
+* estruturação semântica;
+* organização de páginas web;
+* utilização correta de hyperlinks;
 * padronização estrutural;
 * experiência de navegação;
 * documentação técnica.
@@ -186,25 +198,25 @@ A aplicação foi desenvolvida visando:
 
 # 📚 Glossário Técnico
 
-| Termo                   | Definição                                                   |
-| ----------------------- | ----------------------------------------------------------- |
-| HTML                    | Linguagem de marcação utilizada para estruturar páginas web |
-| Hyperlink               | Elemento responsável pela navegação entre páginas           |
-| MPA                     | Multi-Page Application                                      |
-| Requisito Funcional     | Define comportamentos do sistema                            |
-| Requisito Não Funcional | Define restrições e qualidades                              |
+| Termo | Definição |
+|---|---|
+| HTML | Linguagem de marcação utilizada para estruturar páginas web |
+| Hyperlink | Elemento responsável pela navegação entre páginas |
+| MPA | Multi-Page Application |
+| Requisito Funcional | Define comportamentos do sistema |
+| Requisito Não Funcional | Define restrições e qualidades |
 
 ---
 
 # 📋 Requisitos do Usuário
 
-| Código | Descrição                    |
-| ------ | ---------------------------- |
-| RU01   | Acessar página inicial       |
-| RU02   | Navegar entre páginas        |
-| RU03   | Visualizar história do clube |
-| RU04   | Consultar títulos            |
-| RU05   | Visualizar elenco            |
+| Código | Descrição |
+|---|---|
+| RU01 | Acessar página inicial |
+| RU02 | Navegar entre páginas |
+| RU03 | Visualizar história do clube |
+| RU04 | Consultar títulos |
+| RU05 | Visualizar elenco |
 
 ---
 
@@ -212,41 +224,40 @@ A aplicação foi desenvolvida visando:
 
 ## Funcionais
 
-| Código | Descrição                   |
-| ------ | --------------------------- |
-| RF01   | Possuir quatro páginas HTML |
-| RF02   | Interligação entre páginas  |
-| RF03   | Página inicial com menu     |
-| RF04   | Página de história          |
-| RF05   | Página de títulos           |
-| RF06   | Página de elenco            |
+| Código | Descrição |
+|---|---|
+| RF01 | Possuir quatro páginas HTML |
+| RF02 | Interligação entre páginas |
+| RF03 | Página inicial com menu |
+| RF04 | Página de história |
+| RF05 | Página de títulos |
+| RF06 | Página de elenco |
 
 ---
 
 ## Não Funcionais
 
-| Código | Descrição                                |
-| ------ | ---------------------------------------- |
-| RNF01  | Desenvolvimento apenas em HTML           |
-| RNF02  | Compatibilidade com navegadores modernos |
-| RNF03  | Execução local                           |
-| RNF04  | Organização correta dos arquivos         |
-| RNF05  | Navegação clara                          |
+| Código | Descrição |
+|---|---|
+| RNF01 | Desenvolvimento apenas em HTML |
+| RNF02 | Compatibilidade com navegadores modernos |
+| RNF03 | Execução local |
+| RNF04 | Organização correta dos arquivos |
+| RNF05 | Navegação clara |
 
 ---
 
 # 🔮 Evolução do Projeto
 
-O sistema foi planejado para futuras expansões, incluindo:
+O sistema foi planejado para possíveis expansões futuras, incluindo:
 
-* estilização avançada com CSS;
-* responsividade;
-* JavaScript;
-* banco de dados;
-* integração backend;
-* sistema dinâmico;
+* estilização visual utilizando CSS;
+* implementação de interatividade com JavaScript;
+* responsividade para dispositivos móveis;
+* integração com banco de dados;
 * autenticação de usuários;
-* consumo de APIs.
+* consumo de APIs;
+* transformação do sistema em aplicação dinâmica.
 
 ---
 
@@ -262,9 +273,9 @@ O sistema foi planejado para futuras expansões, incluindo:
 
 ```bash
 # Clone o repositório
-git clone https://github.com/seu-usuario/corinthians-monte.git
+git clone https://github.com/abv11/Corinthians-monte.git
 
-# Abra o arquivo index.html
+# Abra o arquivo index.html no navegador
 ```
 
 ---
@@ -272,17 +283,15 @@ git clone https://github.com/seu-usuario/corinthians-monte.git
 # 📁 Convenções de Nomeação
 
 * arquivos em letras minúsculas;
-* sem espaços;
+* nomes sem espaços;
 * organização modular;
-* separação por diretórios.
+* separação lógica dos arquivos.
 
 ---
 
 # 🏛️ Instituição
 
-Projeto acadêmico desenvolvido no
-Instituto Federal de Pernambuco
-Curso Técnico Integrado em Informática para Internet.
+Projeto acadêmico desenvolvido no Instituto Federal de Pernambuco, no curso Técnico Integrado em Informática para Internet, como atividade da disciplina Linguagem Técnica de Programação 2 (LTP2).
 
 ---
 
@@ -296,3 +305,4 @@ Projeto desenvolvido exclusivamente para fins educacionais e acadêmicos.
   <b>Corinthians Monte © 2026</b><br>
   Desenvolvido para a disciplina de LTP2 — IFPE Campus Palmares
 </p>
+````
