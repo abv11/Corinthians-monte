@@ -1,4 +1,3 @@
-````md
 # ⚫ Corinthians Monte — Site Informativo Oficial
 
 <p align="center">
@@ -305,4 +304,3 @@ Projeto desenvolvido exclusivamente para fins educacionais e acadêmicos.
   <b>Corinthians Monte © 2026</b><br>
   Desenvolvido para a disciplina de LTP2 — IFPE Campus Palmares
 </p>
-````
