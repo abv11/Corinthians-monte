@@ -137,7 +137,6 @@ D --> A
 | Curso | Técnico Integrado em Informática para Internet |
 | Disciplina | Linguagem Técnica de Programação 2 |
 | Docente | Carlos Fernandes |
-| Discenntes | Laura Ramos; Angélica Vasconcelos. |
 | Local | Palmares — PE |
 | Data | 5 de maio de 2026 |
 
