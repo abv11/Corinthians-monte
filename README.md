@@ -1,85 +1,50 @@
-DOCUMENTO DE REQUISITOS DE SOFTWARE
-INSTITUTO FEDERAL DE PERNAMBUCO – CAMPUS PALMARES
-CURSO TÉCNICO INTEGRADO EM INFORMÁTICA PARA INTERNET
-DISCIPLINA: LINGUAGEM DE TÉCNICA DE PROGRAMAÇÃO 2 (LTP2)
+# ⚫ Corinthians Monte — Site Informativo Oficial
 
+<p align="center">
+  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white">
+  <img src="https://img.shields.io/badge/MPA-121212?style=for-the-badge&logo=googlechrome&logoColor=white">
+  <img src="https://img.shields.io/badge/LTP2-IFPE-black?style=for-the-badge">
+  <img src="https://img.shields.io/badge/STATUS-FINALIZADO-success?style=for-the-badge">
+</p>
 
-Sistema: Site Informativo Corinthians Monte
+<p align="center">
+  <img width="100%" src="https://images.unsplash.com/photo-1547347298-4074fc3086f0?q=80&w=1600&auto=format&fit=crop">
+</p>
 
+---
 
-Discentes:
-Angélica Benigno de Vasconcelos
-Laura Fernanda Galdino Ramos
+# 🏴 Sobre o Projeto
 
-Docente:
-Carlos Fernandes
+O **Corinthians Monte** é um sistema web estático desenvolvido como atividade da disciplina **Linguagem Técnica de Programação 2 (LTP2)** do curso **Técnico Integrado em Informática para Internet** do Instituto Federal de Pernambuco.
 
+O projeto consiste em um **site informativo institucional** desenvolvido exclusivamente em **HTML**, utilizando arquitetura **MPA (Multi-Page Application)**, com foco em:
 
+* organização estrutural;
+* navegação intuitiva;
+* separação modular de páginas;
+* acessibilidade;
+* clareza visual;
+* boas práticas de desenvolvimento web.
 
+---
 
-Local: Palmares – PE
-5 de maio de 2026
+# 🎯 Objetivos do Sistema
 
-SUMÁRIO
-DOCUMENTO DE REQUISITOS DE SOFTWARE	1
-SUMÁRIO	2
-1. PREFÁCIO	3
-2. INTRODUÇÃO	4
-3. GLOSSÁRIO	5
-4. DEFINIÇÃO DE REQUISITOS DO USUÁRIO	6
-5. ARQUITETURA DO SISTEMA	7
-6. ESPECIFICAÇÃO DE REQUISITOS DO SISTEMA	8
-7. MODELOS DE SISTEMA	9
-8. EVOLUÇÃO DO SISTEMA	10
-9. APÊNDICES	11
+O sistema foi projetado para permitir que usuários:
 
-1. PREFÁCIO
-Este documento apresenta a especificação de requisitos do sistema “Site Informativo Corinthians Monte”, desenvolvido como atividade da disciplina Linguagem de Técnica de Programação 2. O objetivo é estabelecer uma descrição clara e organizada das funcionalidades e restrições do sistema, servindo como base para seu desenvolvimento e avaliação.
+✔️ Naveguem entre páginas independentes
+✔️ Conheçam a história do clube
+✔️ Visualizem títulos conquistados
+✔️ Consultem informações do elenco
+✔️ Utilizem uma interface simples e funcional
 
+---
 
-2. INTRODUÇÃO
-2.1 Objetivo
-Este documento tem como finalidade descrever os requisitos do sistema, garantindo entendimento comum entre desenvolvimento e avaliação.
-2.2 Escopo
-O sistema consiste em um site estático desenvolvido exclusivamente em HTML, destinado à apresentação de informações sobre o time Corinthians Monte.
-2.3 Visão Geral
-O documento está estruturado em seções que abordam definições, requisitos, arquitetura e possíveis evoluções do sistema.
+# 🧱 Arquitetura do Projeto
 
+O sistema utiliza arquitetura do tipo **MPA (Multi-Page Application)**.
 
-
-
-
-
-
-
-
-
-
-
-
-3. GLOSSÁRIO
-HTML: Linguagem de marcação utilizada para estruturar páginas web.
-Página Web: Documento acessado por meio de um navegador.
-Hyperlink: Elemento que permite a navegação entre páginas.
-Navegador: Software responsável por interpretar HTML.
-Requisito Funcional: Define o comportamento do sistema.
-Requisito Não Funcional: Define restrições e qualidades do sistema.
-Arquitetura: Estrutura organizacional do sistema.
-MPA: Aplicação composta por múltiplas páginas independentes.
-Usabilidade: Facilidade de uso do sistema.
-
-4. DEFINIÇÃO DE REQUISITOS DO USUÁRIO
-RU01: O usuário deve acessar uma página inicial com informações do clube.
-RU02: O usuário deve navegar entre as páginas do site.
-RU03: O usuário deve visualizar a história do clube.
-RU04: O usuário deve consultar os títulos conquistados.
-RU05: O usuário deve visualizar informações do elenco.
-
-
-5. ARQUITETURA DO SISTEMA
-5.1 Tipo de Arquitetura
-O sistema utiliza arquitetura do tipo Multi-Page Application (MPA), baseada em páginas HTML interligadas.
-5.2 Estrutura de Diretórios
+```txt
 /corinthians-monte/
 │
 ├── index.html
@@ -88,49 +53,240 @@ O sistema utiliza arquitetura do tipo Multi-Page Application (MPA), baseada em p
 ├── elenco.html
 │
 └── /assets/
-        └──imagens/
+    ├── /css/
+    ├── /images/
+    └── /icons/
+```
 
-5.3 Modelo de Navegação
-A navegação é não linear, permitindo que todas as páginas estejam interligadas por hyperlinks, garantindo acesso completo ao conteúdo a partir de qualquer página.
+---
 
+# 🖥️ Estrutura de Navegação
 
-6. ESPECIFICAÇÃO DE REQUISITOS DO SISTEMA
-6.1 Requisitos Funcionais
-RF01: O sistema deve possuir quatro páginas HTML distintas.
-RF02: Todas as páginas devem possuir links entre si.
-RF03: A página inicial deve conter informações gerais e menu.
-RF04: A página de história deve apresentar informações do clube.
-RF05: A página de títulos deve listar conquistas em ordem cronológica.
-RF06: A página de elenco deve apresentar jogadores e comissão técnica.
-6.2 Requisitos Não Funcionais
-RNF01: O sistema deve ser desenvolvido apenas em HTML.
-RNF02: O sistema deve funcionar em navegadores modernos.
-RNF03: O sistema deve ser executado localmente sem servidor.
-RNF04: Os arquivos devem estar organizados corretamente.
-RNF05: O sistema deve apresentar navegação clara e compreensível.
+```mermaid
+graph TD
 
+A[index.html]
+A --> B[historia.html]
+A --> C[titulos.html]
+A --> D[elenco.html]
 
-7. MODELOS DE SISTEMA
-Ator: Usuário
-Casos de uso:
+B --> A
+C --> A
+D --> A
+```
 
-Fluxo básico:
-O usuário acessa a página inicial, escolhe uma seção através do menu, navega entre páginas e visualiza as informações desejadas.
+---
 
+# 📚 Tecnologias Utilizadas
 
-8. EVOLUÇÃO DO SISTEMA
-O sistema pode ser expandido futuramente com a adição de estilos utilizando CSS, implementação de interatividade com JavaScript, integração com banco de dados e adaptação para dispositivos móveis.
+| Tecnologia    | Finalidade                |
+| ------------- | ------------------------- |
+| HTML5         | Estruturação do sistema   |
+| CSS3          | Estilização visual        |
+| Hyperlinks    | Navegação entre páginas   |
+| Navegador Web | Execução local do sistema |
 
+---
 
-9. APÊNDICES
-Apêndice A: Convenções de nomeação
-Os arquivos devem ser nomeados em letras minúsculas e sem espaços.
-Apêndice B: Ferramentas utilizadas
-Editor de código e navegador web.
+# ✨ Funcionalidades
 
+## Requisitos Funcionais
 
+* Sistema com múltiplas páginas HTML
+* Navegação interligada entre todas as páginas
+* Página inicial institucional
+* Página de história do clube
+* Página de títulos e conquistas
+* Página dedicada ao elenco
 
+---
 
+# 🔒 Requisitos Não Funcionais
 
+* Desenvolvimento exclusivamente em HTML
+* Compatibilidade com navegadores modernos
+* Execução local sem necessidade de servidor
+* Organização modular dos arquivos
+* Navegação clara e objetiva
 
+---
 
+# 📖 Documento de Requisitos de Software
+
+## 📌 Informações Acadêmicas
+
+| Campo       | Informação                                     |
+| ----------- | ---------------------------------------------- |
+| Instituição | Instituto Federal de Pernambuco                |
+| Curso       | Técnico Integrado em Informática para Internet |
+| Disciplina  | Linguagem Técnica de Programação 2             |
+| Docente     | Carlos Fernandes                               |
+| Local       | Palmares — PE                                  |
+| Data        | 5 de maio de 2026                              |
+
+---
+
+## 👩‍💻 Discentes
+
+* Angélica Benigno de Vasconcelos
+* Laura Fernanda Galdino Ramos
+
+---
+
+# 📑 Sumário do Documento de Requisitos
+
+```txt
+1. Prefácio
+2. Introdução
+3. Glossário
+4. Definição de Requisitos do Usuário
+5. Arquitetura do Sistema
+6. Especificação de Requisitos do Sistema
+7. Modelos de Sistema
+8. Evolução do Sistema
+9. Apêndices
+```
+
+---
+
+# 📌 Prefácio
+
+Este documento apresenta a especificação de requisitos do sistema **“Site Informativo Corinthians Monte”**, desenvolvido como atividade acadêmica da disciplina **LTP2**.
+
+Seu principal objetivo é documentar formalmente:
+
+* funcionalidades;
+* estrutura;
+* requisitos;
+* restrições;
+* e possibilidades futuras de expansão do sistema.
+
+---
+
+# 📘 Introdução
+
+O projeto consiste em um sistema web estático voltado para apresentação institucional do clube fictício **Corinthians Monte**.
+
+A aplicação foi desenvolvida visando:
+
+* prática de arquitetura MPA;
+* organização de páginas HTML;
+* uso correto de hyperlinks;
+* padronização estrutural;
+* experiência de navegação;
+* documentação técnica.
+
+---
+
+# 📚 Glossário Técnico
+
+| Termo                   | Definição                                                   |
+| ----------------------- | ----------------------------------------------------------- |
+| HTML                    | Linguagem de marcação utilizada para estruturar páginas web |
+| Hyperlink               | Elemento responsável pela navegação entre páginas           |
+| MPA                     | Multi-Page Application                                      |
+| Requisito Funcional     | Define comportamentos do sistema                            |
+| Requisito Não Funcional | Define restrições e qualidades                              |
+
+---
+
+# 📋 Requisitos do Usuário
+
+| Código | Descrição                    |
+| ------ | ---------------------------- |
+| RU01   | Acessar página inicial       |
+| RU02   | Navegar entre páginas        |
+| RU03   | Visualizar história do clube |
+| RU04   | Consultar títulos            |
+| RU05   | Visualizar elenco            |
+
+---
+
+# ⚙️ Requisitos do Sistema
+
+## Funcionais
+
+| Código | Descrição                   |
+| ------ | --------------------------- |
+| RF01   | Possuir quatro páginas HTML |
+| RF02   | Interligação entre páginas  |
+| RF03   | Página inicial com menu     |
+| RF04   | Página de história          |
+| RF05   | Página de títulos           |
+| RF06   | Página de elenco            |
+
+---
+
+## Não Funcionais
+
+| Código | Descrição                                |
+| ------ | ---------------------------------------- |
+| RNF01  | Desenvolvimento apenas em HTML           |
+| RNF02  | Compatibilidade com navegadores modernos |
+| RNF03  | Execução local                           |
+| RNF04  | Organização correta dos arquivos         |
+| RNF05  | Navegação clara                          |
+
+---
+
+# 🔮 Evolução do Projeto
+
+O sistema foi planejado para futuras expansões, incluindo:
+
+* estilização avançada com CSS;
+* responsividade;
+* JavaScript;
+* banco de dados;
+* integração backend;
+* sistema dinâmico;
+* autenticação de usuários;
+* consumo de APIs.
+
+---
+
+# 📷 Preview do Projeto
+
+<p align="center">
+  <img width="100%" src="https://images.unsplash.com/photo-1511886929837-354d827aae26?q=80&w=1600&auto=format&fit=crop">
+</p>
+
+---
+
+# 🚀 Como Executar
+
+```bash
+# Clone o repositório
+git clone https://github.com/seu-usuario/corinthians-monte.git
+
+# Abra o arquivo index.html
+```
+
+---
+
+# 📁 Convenções de Nomeação
+
+* arquivos em letras minúsculas;
+* sem espaços;
+* organização modular;
+* separação por diretórios.
+
+---
+
+# 🏛️ Instituição
+
+Projeto acadêmico desenvolvido no
+Instituto Federal de Pernambuco
+Curso Técnico Integrado em Informática para Internet.
+
+---
+
+# 📄 Licença
+
+Projeto desenvolvido exclusivamente para fins educacionais e acadêmicos.
+
+---
+
+<p align="center">
+  <b>Corinthians Monte © 2026</b><br>
+  Desenvolvido para a disciplina de LTP2 — IFPE Campus Palmares
+</p>
