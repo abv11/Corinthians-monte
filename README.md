@@ -40,23 +40,29 @@ O sistema foi projetado para permitir que usuários:
 
 ---
 
-# 🧱 Arquitetura do Projeto
+## 🌐 Link do Projeto
 
-O sistema utiliza arquitetura do tipo **MPA (Multi-Page Application)**.
+O site já está publicado e pode ser acessado online aqui:
+👉 **[Clique aqui para acessar o site](ui)**
 
-```txt
-/corinthians-monte/
-│
-├── index.html
-├── historia.html
-├── titulos.html
-├── elenco.html
-│
-└── /assets/
-    ├── /css/
-    ├── /images/
-    └── /icons/
-```
+## 🗺️ Arquitetura de Navegação
+
+O site foi estruturado com uma navegação bidirecional entre a página principal (`index.html`) e as seções secundárias:
+
+*   **`index.html`** ➡️ `historia.html` / `titulos.html` / `elenco.html`
+*   **Páginas Secundárias** ↩️ `index.html`
+
+## 📁 Estrutura de Arquivos
+
+Abaixo está a árvore de diretórios do projeto:
+
+├── brasao.png         # Logotipo/escudo do time
+├── elenco.html        # Página com a lista de jogadores/membros
+├── historia.html      # Página sobre a história da equipe
+├── index.html         # Página inicial e central do site
+├── README.md          # Documentação do projeto (este arquivo)
+└── titulos.html       # Página com as conquistas e galeria de troféus
+
 
 ---
 
