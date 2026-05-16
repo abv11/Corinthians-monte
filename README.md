@@ -263,7 +263,7 @@ O sistema foi planejado para possíveis expansões futuras, incluindo:
 # 📷 Preview do Projeto
 
 <p align="center">
-  <img width="100%" src="https://images.unsplash.com/photo-1511886929837-354d827aae26?q=80&w=1600&auto=format&fit=crop">
+  <img width="100%" src="image.png">
 </p>
 
 ---
