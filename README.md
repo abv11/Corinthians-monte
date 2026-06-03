@@ -176,6 +176,7 @@ Durante a atividade foram utilizados os seguintes recursos:
 
 * Angélica Benigno de Vasconcelos
 * Laura Fernanda Galdino Ramos
+* Tharsila Caroline Almeida de Melo
 
 ---
 
