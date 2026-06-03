@@ -5,7 +5,7 @@
   <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white">
   <img src="https://img.shields.io/badge/MPA-121212?style=for-the-badge&logo=googlechrome&logoColor=white">
   <img src="https://img.shields.io/badge/LTP2-IFPE-black?style=for-the-badge">
-  <img src="https://img.shields.io/badge/STATUS-CONCLUÍDO-success?style=for-the-badge">
+  <img src="https://img.shields.io/badge/STATUS-FINALIZANDO-success?style=for-the-badge">
 </p>
 
 <p align="center">
