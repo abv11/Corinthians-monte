@@ -32,9 +32,13 @@ Durante o desenvolvimento foram aplicados diversos recursos modernos do CSS3, in
 # 🎯 Objetivos do Sistema
 
 ✔️ Navegação intuitiva entre páginas
+
 ✔️ Layout moderno e organizado
+
 ✔️ Aplicação prática dos recursos de CSS3
+
 ✔️ Melhor experiência visual para o usuário
+
 ✔️ Manutenção da acessibilidade e legibilidade
 
 ---
