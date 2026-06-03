@@ -9,7 +9,7 @@
 </p>
 
 <p align="center">
-  <img width="100%" src="cmbanner.png">
+  <img width="100%" src="img/cmbanner.png">
 </p>
 
 ---
