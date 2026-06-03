@@ -2,9 +2,10 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white">
+  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white">
   <img src="https://img.shields.io/badge/MPA-121212?style=for-the-badge&logo=googlechrome&logoColor=white">
   <img src="https://img.shields.io/badge/LTP2-IFPE-black?style=for-the-badge">
-  <img src="https://img.shields.io/badge/STATUS-FINALIZANDO-success?style=for-the-badge">
+  <img src="https://img.shields.io/badge/STATUS-CONCLUÍDO-success?style=for-the-badge">
 </p>
 
 <p align="center">
@@ -15,30 +16,26 @@
 
 # 🏴 Sobre o Projeto
 
-O **Corinthians Monte** é um sistema web estático desenvolvido como atividade da disciplina **Linguagem Técnica de Programação 2 (LTP2)** do curso **Técnico Integrado em Informática para Internet** do Instituto Federal de Pernambuco.
+O Corinthians Monte é um site informativo institucional desenvolvido como atividade da disciplina Linguagem Técnica de Programação 2 (LTP2).
 
-O projeto consiste em um **site informativo institucional** desenvolvido exclusivamente em **HTML puro**, utilizando arquitetura **MPA (Multi-Page Application)**.
+Esta versão corresponde à evolução do projeto original, incorporando recursos de CSS3 para aprimorar a aparência visual, a experiência do usuário e a organização da interface.
 
-O desenvolvimento teve como foco:
+O projeto utiliza:
 
-* organização estrutural;
-* navegação intuitiva;
-* separação modular de páginas;
-* acessibilidade;
-* clareza na disposição das informações;
-* boas práticas de estruturação HTML.
+- HTML5 para estruturação;
+- CSS3 para estilização;
+- Arquitetura MPA (Multi-Page Application).
 
+Durante o desenvolvimento foram aplicados diversos recursos modernos do CSS3, incluindo animações, transições, transformações, sombras, transparência e controle avançado de layouts.
 ---
 
 # 🎯 Objetivos do Sistema
 
-O sistema foi projetado para permitir que usuários:
-
-✔️ Naveguem entre páginas independentes  
-✔️ Conheçam a história do clube  
-✔️ Visualizem títulos conquistados  
-✔️ Consultem informações do elenco  
-✔️ Utilizem uma interface simples e funcional  
+✔️ Navegação intuitiva entre páginas
+✔️ Layout moderno e organizado
+✔️ Aplicação prática dos recursos de CSS3
+✔️ Melhor experiência visual para o usuário
+✔️ Manutenção da acessibilidade e legibilidade
 
 ---
 
@@ -67,12 +64,17 @@ As páginas secundárias também possuem retorno para a página inicial.
 # 📁 Estrutura de Arquivos
 
 ```txt
-├── brasao.png
-├── elenco.html
-├── historia.html
+├── css
+│   └── style.css
+├── img
+│   ├── brasao.png
+│   ├── cmbanner.png
+│   └── image.png
 ├── index.html
-├── README.md
-└── titulos.html
+├── historia.html
+├── titulos.html
+├── elenco.html
+└── README.md
 ```
 
 ---
@@ -97,10 +99,31 @@ D --> A
 # 📚 Tecnologias Utilizadas
 
 | Tecnologia | Finalidade |
-|---|---|
-| HTML5 | Estruturação completa do sistema |
+|------------|------------|
+| HTML5 | Estruturação do conteúdo |
+| CSS3 | Estilização visual |
 | Hyperlinks | Navegação entre páginas |
-| Navegador Web | Execução local do projeto |
+| GitHub Pages | Hospedagem do projeto |
+
+---
+
+# 🎨 Recursos CSS3 Aplicados
+
+Durante a atividade foram utilizados os seguintes recursos:
+
+- Seletores CSS3;
+- Bordas arredondadas (border-radius);
+- Sombras em elementos (box-shadow);
+- Sombras em textos (text-shadow);
+- Transparência (opacity e rgba);
+- Imagens de fundo (background-image);
+- Controle de fundo (background-size, background-position);
+- Quebra de palavras (word-wrap / overflow-wrap);
+- Transições (transition);
+- Transformações (transform);
+- Animações (animation e @keyframes);
+- Pseudo-classes (:hover);
+- Pseudo-elementos (::before e ::after).
 
 ---
 
@@ -119,8 +142,11 @@ D --> A
 
 # 🔒 Requisitos Não Funcionais
 
-* Desenvolvimento exclusivamente em HTML;
+* Desenvolvimento utilizando HTML5 e CSS3;
 * Compatibilidade com navegadores modernos;
+* Interface visual responsiva;
+* Boa legibilidade e acessibilidade;
+* Organização modular dos arquivos;
 * Execução local sem necessidade de servidor;
 * Organização modular dos arquivos;
 * Navegação clara e objetiva.
@@ -248,16 +274,14 @@ Toda a aplicação foi desenvolvida exclusivamente com HTML, visando:
 
 # 🔮 Evolução do Projeto
 
-O sistema foi planejado para possíveis expansões futuras, incluindo:
+Nesta versão do sistema foram incorporados recursos avançados de CSS3, permitindo:
 
-* estilização visual utilizando CSS;
-* implementação de interatividade com JavaScript;
-* responsividade para dispositivos móveis;
-* integração com banco de dados;
-* autenticação de usuários;
-* consumo de APIs;
-* transformação do sistema em aplicação dinâmica.
-
+- Melhor apresentação visual;
+- Interações através de animações;
+- Efeitos de transição;
+- Elementos estilizados com sombras;
+- Interface mais moderna e agradável;
+- Preparação para futuras integrações com JavaScript.
 ---
 
 # 📷 Preview do Projeto
