@@ -1,1 +1,154 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
 
+body{
+font-family:'Segoe UI',sans-serif;
+background:#f4f4f4;
+color:#222;
+line-height:1.8;
+}
+
+header{
+background:linear-gradient(135deg,#000,#444);
+color:white;
+text-align:center;
+padding:50px 20px;
+text-shadow:3px 3px 8px rgba(0,0,0,.7);
+box-shadow:0 4px 12px rgba(0,0,0,.3);
+}
+
+header h1{
+font-size:3rem;
+margin-bottom:10px;
+}
+
+header p{
+font-size:1.2rem;
+max-width:800px;
+margin:0 auto;
+text-align:center;
+}
+
+nav{
+background:#111;
+position:sticky;
+top:0;
+z-index:999;
+}
+
+nav ul{
+display:flex;
+justify-content:center;
+list-style:none;
+}
+
+nav a{
+display:block;
+padding:15px 25px;
+color:white;
+text-decoration:none;
+transition:.4s;
+}
+
+nav a:hover{
+background:#fff;
+color:#000;
+transform:scale(1.1);
+}
+
+.container{
+width:90%;
+max-width:1200px;
+margin:40px auto;
+}
+
+.card{
+background:white;
+padding:30px;
+margin-bottom:30px;
+border-radius:20px;
+box-shadow:0 8px 25px rgba(0,0,0,.15);
+transition:.4s;
+animation:fadeIn 1s ease;
+}
+
+.card:hover{
+transform:translateY(-8px);
+}
+
+h2{
+margin-bottom:15px;
+border-left:6px solid #b30000;
+padding-left:12px;
+}
+
+h2::before{
+content:"⚽ ";
+}
+
+p{
+text-align:justify;
+word-wrap:break-word;
+}
+
+ul{
+padding-left:30px;
+margin-top:10px;
+}
+
+li{
+margin-bottom:8px;
+transition:.3s;
+}
+
+li:hover{
+color:#b30000;
+transform:translateX(8px);
+}
+
+li:nth-child(even){
+color:#555;
+}
+
+.escudo-container{
+text-align:center;
+margin:30px 0;
+}
+
+.escudo{
+width:180px;
+transition:.8s;
+}
+
+.escudo:hover{
+transform:rotate(360deg) scale(1.1);
+}
+
+footer{
+background:#000;
+color:white;
+text-align:center;
+padding:25px;
+margin-top:40px;
+}
+
+footer p{
+text-align:center;
+margin:0 auto;
+}
+@keyframes fadeIn{
+
+from{
+opacity:0;
+transform:translateY(40px);
+}
+
+to{
+opacity:1;
+transform:translateY(0);
+}
+
+}
